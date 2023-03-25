@@ -56,7 +56,7 @@ public class ApiTest {
         CloseableHttpResponse response = httpClient.execute(post);
         if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
             String res = EntityUtils.toString(response.getEntity());
-            System.out.println(res.);
+            System.out.println(res);
         } else {
             System.out.println(response.getStatusLine().getStatusCode());
         }
