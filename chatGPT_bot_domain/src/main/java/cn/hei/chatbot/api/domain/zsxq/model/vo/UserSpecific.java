@@ -1,6 +1,7 @@
 package cn.hei.chatbot.api.domain.zsxq.model.vo;
-public class User_specific
-{
+
+public class UserSpecific {
+
     private boolean liked;
 
     private boolean subscribed;
@@ -17,4 +18,5 @@ public class User_specific
     public boolean getSubscribed(){
         return this.subscribed;
     }
+
 }

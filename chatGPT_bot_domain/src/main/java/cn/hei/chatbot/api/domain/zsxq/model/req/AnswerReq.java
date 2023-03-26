@@ -2,7 +2,11 @@ package cn.hei.chatbot.api.domain.zsxq.model.req;
 
 public class AnswerReq {
 
-    private  ReqData req_data;
+    private ReqData req_data;
+
+    public AnswerReq(ReqData req_data) {
+        this.req_data = req_data;
+    }
 
     public ReqData getReq_data() {
         return req_data;
@@ -12,7 +16,4 @@ public class AnswerReq {
         this.req_data = req_data;
     }
 
-    public AnswerReq(ReqData req_data) {
-        this.req_data = req_data;
-    }
 }

@@ -1,18 +1,21 @@
 package cn.hei.chatbot.api.domain.zsxq.model.vo;
-public class Questionee
-{
-    private int user_id;
+
+public class Questionee {
+
+    private String user_id;
 
     private String name;
 
     private String avatar_url;
 
+    private String description;
+
     private String location;
 
-    public void setUser_id(int user_id){
+    public void setUser_id(String user_id){
         this.user_id = user_id;
     }
-    public int getUser_id(){
+    public String getUser_id(){
         return this.user_id;
     }
     public void setName(String name){
@@ -27,10 +30,17 @@ public class Questionee
     public String getAvatar_url(){
         return this.avatar_url;
     }
+    public void setDescription(String description){
+        this.description = description;
+    }
+    public String getDescription(){
+        return this.description;
+    }
     public void setLocation(String location){
         this.location = location;
     }
     public String getLocation(){
         return this.location;
     }
+
 }

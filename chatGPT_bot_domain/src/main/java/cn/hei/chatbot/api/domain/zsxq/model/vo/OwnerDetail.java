@@ -1,6 +1,7 @@
 package cn.hei.chatbot.api.domain.zsxq.model.vo;
-public class Owner_detail
-{
+
+public class OwnerDetail {
+
     private int questions_count;
 
     private String join_time;
@@ -17,4 +18,5 @@ public class Owner_detail
     public String getJoin_time(){
         return this.join_time;
     }
+
 }

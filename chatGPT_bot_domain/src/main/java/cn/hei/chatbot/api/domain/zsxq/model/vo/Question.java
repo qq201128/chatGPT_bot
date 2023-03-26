@@ -1,6 +1,7 @@
 package cn.hei.chatbot.api.domain.zsxq.model.vo;
-public class Question
-{
+
+public class Question {
+
     private Owner owner;
 
     private Questionee questionee;
@@ -11,7 +12,7 @@ public class Question
 
     private boolean anonymous;
 
-    private Owner_detail owner_detail;
+    private OwnerDetail owner_detail;
 
     private String owner_location;
 
@@ -45,10 +46,10 @@ public class Question
     public boolean getAnonymous(){
         return this.anonymous;
     }
-    public void setOwner_detail(Owner_detail owner_detail){
+    public void setOwner_detail(OwnerDetail owner_detail){
         this.owner_detail = owner_detail;
     }
-    public Owner_detail getOwner_detail(){
+    public OwnerDetail getOwner_detail(){
         return this.owner_detail;
     }
     public void setOwner_location(String owner_location){
@@ -57,4 +58,5 @@ public class Question
     public String getOwner_location(){
         return this.owner_location;
     }
+
 }

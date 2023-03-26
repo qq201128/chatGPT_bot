@@ -1,7 +1,7 @@
 package cn.hei.chatbot.api.domain.zsxq.model.req;
 
-public class ReqData
-{
+public class ReqData {
+
     private String text;
     private String[] image_ids = new String[]{};
     private boolean silenced;
@@ -34,5 +34,4 @@ public class ReqData
     public void setSilenced(boolean silenced) {
         this.silenced = silenced;
     }
-
 }

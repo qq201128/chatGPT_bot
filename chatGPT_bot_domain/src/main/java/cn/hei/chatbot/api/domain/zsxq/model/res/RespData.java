@@ -4,10 +4,8 @@ import cn.hei.chatbot.api.domain.zsxq.model.vo.Topics;
 
 import java.util.List;
 
-/**
- * 结果数据
- */
-public class ResData {
+public class RespData {
+
     private List<Topics> topics;
 
     public List<Topics> getTopics() {
@@ -17,4 +15,5 @@ public class ResData {
     public void setTopics(List<Topics> topics) {
         this.topics = topics;
     }
+
 }

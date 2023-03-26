@@ -4,12 +4,9 @@ import cn.hei.chatbot.api.domain.zsxq.model.aggregates.UnAnsweredQuestionsAggreg
 
 import java.io.IOException;
 
-/**
- * api接口
- */
-public interface IZsxqApi {
+public interface IZsxpApi {
 
     UnAnsweredQuestionsAggregates queryUnAnsweredQuestionsTopicId(String groupId, String cookie)throws IOException;
 
-    boolean answer(String groupId,String cookie,String topicId,String text,boolean silenced) throws  IOException;
+    boolean answer(String groupId, String cookie, String topicId, String text, boolean silenced) throws IOException;
 }

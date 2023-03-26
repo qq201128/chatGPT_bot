@@ -1,7 +1,8 @@
 package cn.hei.chatbot.api.domain.zsxq.model.vo;
-public class Topics
-{
-    private int topic_id;
+
+public class Topics {
+
+    private String topic_id;
 
     private Group group;
 
@@ -27,12 +28,12 @@ public class Topics
 
     private String create_time;
 
-    private User_specific user_specific;
+    private UserSpecific user_specific;
 
-    public void setTopic_id(int topic_id){
+    public void setTopic_id(String topic_id){
         this.topic_id = topic_id;
     }
-    public int getTopic_id(){
+    public String getTopic_id(){
         return this.topic_id;
     }
     public void setGroup(Group group){
@@ -107,10 +108,11 @@ public class Topics
     public String getCreate_time(){
         return this.create_time;
     }
-    public void setUser_specific(User_specific user_specific){
+    public void setUser_specific(UserSpecific user_specific){
         this.user_specific = user_specific;
     }
-    public User_specific getUser_specific(){
+    public UserSpecific getUser_specific(){
         return this.user_specific;
     }
+
 }
