@@ -1,12 +1,12 @@
 package cn.hei.chatbot.api.test;
 
+import cn.hei.chatbot.api.domain.ai.IOpenAi;
 import cn.hei.chatbot.api.domain.zsxq.IZsxpApi;
 import cn.hei.chatbot.api.domain.zsxq.model.aggregates.UnAnsweredQuestionsAggregates;
 import cn.hei.chatbot.api.domain.zsxq.model.vo.Topics;
 import com.alibaba.fastjson.JSON;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.openqa.selenium.json.Json;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -27,6 +27,9 @@ public class SpringBootRunTest {
     @Value("${chatGPT_bot.cookie}")
     private String cookie;
 
+
+    @Resource
+    private IOpenAi openAi;
     @Resource
     private IZsxpApi zsxpApi;
 
@@ -44,4 +47,11 @@ public class SpringBootRunTest {
             zsxpApi.answer(groupId,cookie,topicId,text,false);
         }
     }
+
+    @Test
+    public void test_openAi() throws IOException {
+        String response = openAi.doChatGPT("帮我写一个java冒泡排序");
+        logger.info("测试结果：{}", response);
+    }
+
 }

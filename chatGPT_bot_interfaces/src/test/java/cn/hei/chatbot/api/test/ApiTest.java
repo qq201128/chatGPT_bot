@@ -69,13 +69,13 @@ public class ApiTest {
     public void test_chatGPT() throws IOException {
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();
 
-        HttpPost post = new HttpPost("https://api.openai.com/v1/chat/completions");
+        HttpPost post = new HttpPost("http://45.136.14.30/v1/chat/completions");
         post.addHeader("Content-Type","application/json");
-        post.addHeader("Authorization","Bearer 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");
+        post.addHeader("Authorization","Bearer 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");
 
         String paramJson = "{\n" +
                 "     \"model\": \"gpt-3.5-turbo\",\n" +
-                "     \"messages\": [{\"role\": \"user\", \"content\": \"Say this is a test!\"}],\n" +
+                "     \"messages\": [{\"role\": \"user\", \"content\": \"请写一个冒泡排序\"}],\n" +
                 "     \"temperature\": 0.7\n" +
                 "   }";
         StringEntity stringEntity = new StringEntity(paramJson, ContentType.create("text/json", "UTF-8"));

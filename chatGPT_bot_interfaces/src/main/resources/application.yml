@@ -4,3 +4,4 @@ server:
 chatGPT_bot:
   groupId: 28885828412441
   cookie: zsxq_access_token=76A8ABB6-7CAE-19E3-FC54-8650EFD9E7A7_8679CB13E766A424; zsxqsessionid=5bd98d99629917e7007019e973df52ce
+  openAiKey: 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
