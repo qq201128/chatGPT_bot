@@ -1,0 +1,1 @@
+docker run -e PARAMS=" --chatbot-api.groupId=28885828412441 --chatbot-api.openAiKey=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 --chatbot-api.cookie=zsxq_access_token=76A8ABB6-7CAE-19E3-FC54-8650EFD9E7A7_8679CB13E766A424; zsxqsessionid=5bd98d99629917e7007019e973df52ce" -p 8090:8090 --name chatbot-api -d chatbot-api:1.0

@@ -1,0 +1,1 @@
+ docker build -f ./Dockerfile -t chatGPT_bot:1.0 .
